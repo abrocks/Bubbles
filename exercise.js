@@ -6,8 +6,6 @@ request: asking another server to say, hey give us this
 asynch: we make a call, but we dont know when we will get it back
 start with li
 get al the hrefs ; put the hrefs in a array
-
-
 */ 
 //var data = require('./mitcourses_one.js');
 var request = require('sync-request'); //note that I am heavily copying the video Abel posted 
@@ -45,8 +43,8 @@ exercise.one = function(){
         
     })
     */ 
-    urls.push('http://student.mit.edu/catalog/mla1.html');
-    urls.push('http://student.mit.edu/catalog/mlb1.html');
+    urls.push('http://student.mit.edu/catalog/m1a.html');
+    urls.push('http://student.mit.edu/catalog/m1b.html');
     urls.push('http://student.mit.edu/catalog/m1c.html');
     urls.push('http://student.mit.edu/catalog/m2a.html');
     urls.push('http://student.mit.edu/catalog/m2b.html');
@@ -152,6 +150,7 @@ exercise.two = function(){
 
     urls.forEach(function(url, index){
         var res = request('GET', url);
+        console.log(res);
         var filename = './catalog/' + index + '.html';
         fs.writeFileSync(filename, res.getBody().toString()); 
     });
@@ -172,14 +171,16 @@ exercise.three = function(){
     console.log('--- QUESTION 03 ---');
 
     var files = [];
+    var urls = exercise.one();
     for (var i=0; i < urls.length; i++){
         files.push('./catalog/' + i + '.html'); //
-    }
+        }
 
     files.forEach(function(file, index){
         var data = fs.readFileSync(file); //reading files in catalog folder
         console.log('adding ' + file + ' to catalog.txt');
         fs.appendFileSync('./catalog/catalog.txt', data); //write it to a single file 
+        //it is writing to a single file now 
         })};
 
 exercise.four = function(){
@@ -196,13 +197,14 @@ exercise.four = function(){
     //  See homework guide document for more info.
     // -----------------------------------------------
     console.log('---QUESTION 04---');
+    //we are not creating this clean file 
     var data = fs.readFileSync('./catalog/catalog.txt'); //cleaning up the content 
     var scrubbed = minify(data.toString(),{
         collapseWhitespace: true,
         minifyJS: true,
         minifyCSS: true
     }); 
-    var clean = scrubbed.replace(/'/g, ''); //if i have intermidenitae '' within text, things will break, so removing them 
+    var clean = scrubbed.replace(/'/g, ''); //if i have intermedate single quotes'' within text, things will break, so removing them 
     fs.writeFileSync('.catalog/clean.txt', clean); //once done, write back out (its clean without those '')
 };
 
