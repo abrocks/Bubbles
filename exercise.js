@@ -9,7 +9,7 @@ get al the hrefs ; put the hrefs in a array
 
 
 */ 
-var data = require('./mitcourses_one.js');
+//var data = require('./mitcourses_one.js');
 var request = require('sync-request'); //note that I am heavily copying the video Abel posted 
 var minify = require('html-minifier').minify;
 var cheerio = require('cheerio');
@@ -31,7 +31,7 @@ exercise.one = function(){
     console.log('--- QUESTION 01 ---'); // going to print these steps out so I can see where I am when I troubleshoot 
     //why do I have two here 
     
-    var $ = cheerio.load(data);
+   // var $ = cheerio.load(data);
     
     //var li = [];
     var urls = [];
@@ -129,6 +129,7 @@ exercise.one = function(){
 
 
     //he lists the urls: there has got to be a better way to get all those htmls with scraping 
+    //he has a list of 46 
     return urls; 
 };
 
@@ -150,7 +151,7 @@ exercise.two = function(){
     var urls = exercise.one();
 
     urls.forEach(function(url, index){
-        var res = request ('GET', url);
+        var res = request('GET', url);
         var filename = './catalog/' + index + '.html';
         fs.writeFileSync(filename, res.getBody().toString()); 
     });
