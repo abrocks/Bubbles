@@ -1,5 +1,5 @@
 /*
-firts go to the html
+first go to the html
 request that in my code
 then I would use cheerio to pull the components
 request: asking another server to say, hey give us this 
@@ -28,24 +28,107 @@ exercise.one = function(){
     //
     //  See homework guide document for more info.
     // -----------------------------------------------
-    console.log('--- QUESTION 01 ---'); // going to print these steps out so I can see where I am when I trouleshoot 
+    console.log('--- QUESTION 01 ---'); // going to print these steps out so I can see where I am when I troubleshoot 
     //why do I have two here 
     
     var $ = cheerio.load(data);
     
-    var li = [];
+    //var li = [];
     var urls = [];
     
+    /*
     $('li').each(function(i,element){
-        urls.push($(element).text());
+       urls.push($(element).text());
     });
     //then pull ou the  href (that will get you mla.html) 
     li.map(function (){
         
     })
-    //urls.push('http://student.mit.edu/catalog/mla1.html');
-    //urls.push('http://student.mit.edu/catalog/mlb1.html');
-    //he lists the urls: there has got to be a better way to get all those htmls
+    */ 
+    urls.push('http://student.mit.edu/catalog/mla1.html');
+    urls.push('http://student.mit.edu/catalog/mlb1.html');
+    urls.push('http://student.mit.edu/catalog/m1c.html');
+    urls.push('http://student.mit.edu/catalog/m2a.html');
+    urls.push('http://student.mit.edu/catalog/m2b.html');
+    urls.push('http://student.mit.edu/catalog/m2c.html');
+    urls.push('http://student.mit.edu/catalog/m3a.html');
+    urls.push('http://student.mit.edu/catalog/m3b.html');
+    urls.push('http://student.mit.edu/catalog/m4a.html');
+    urls.push('http://student.mit.edu/catalog/m4b.html');
+    urls.push('http://student.mit.edu/catalog/m4c.html');
+    urls.push('http://student.mit.edu/catalog/m4d.html');
+    urls.push('http://student.mit.edu/catalog/m4e.html');
+    urls.push('http://student.mit.edu/catalog/m4f.html');
+    urls.push('http://student.mit.edu/catalog/m4g.html');
+    urls.push('http://student.mit.edu/catalog/m5a.html');
+    urls.push('http://student.mit.edu/catalog/m5b.html');
+    urls.push('http://student.mit.edu/catalog/m6a.html');
+    urls.push('http://student.mit.edu/catalog/m6b.html');
+    urls.push('http://student.mit.edu/catalog/m6c.html');
+    urls.push('http://student.mit.edu/catalog/m7a.html');
+    urls.push('http://student.mit.edu/catalog/m8a.html');
+    urls.push('http://student.mit.edu/catalog/m8b.html');
+    urls.push('http://student.mit.edu/catalog/m9a.html');
+    urls.push('http://student.mit.edu/catalog/m9b.html');
+    urls.push('http://student.mit.edu/catalog/m10a.html');
+    urls.push('http://student.mit.edu/catalog/m10b.html');
+    urls.push('http://student.mit.edu/catalog/m11a.html');
+    urls.push('http://student.mit.edu/catalog/m11b.html');
+    urls.push('http://student.mit.edu/catalog/m11c.html');
+    urls.push('http://student.mit.edu/catalog/m12a.html');
+    urls.push('http://student.mit.edu/catalog/m12b.html');
+    urls.push('http://student.mit.edu/catalog/m12c.html');
+    urls.push('http://student.mit.edu/catalog/m14a.html');
+    urls.push('http://student.mit.edu/catalog/m14b.html');
+    urls.push('http://student.mit.edu/catalog/m15a.html');
+    urls.push('http://student.mit.edu/catalog/m15b.html');
+    urls.push('http://student.mit.edu/catalog/m15c.html');
+    urls.push('http://student.mit.edu/catalog/m16a.html');
+    urls.push('http://student.mit.edu/catalog/m16b.html');
+    urls.push('http://student.mit.edu/catalog/m17a.html');
+    urls.push('http://student.mit.edu/catalog/m17b.html');
+    urls.push('http://student.mit.edu/catalog/m18a.html');
+    urls.push('http://student.mit.edu/catalog/m18b.html');
+    urls.push('http://student.mit.edu/catalog/m20a.html');
+    urls.push('http://student.mit.edu/catalog/m21a.html');
+    urls.push('http://student.mit.edu/catalog/m21Aa.html');
+    urls.push('http://student.mit.edu/catalog/mCMSa.html');
+    urls.push('http://student.mit.edu/catalog/m21Ga.html');
+    urls.push('http://student.mit.edu/catalog/m21Gb.html');
+    urls.push('http://student.mit.edu/catalog/m21Gc.html');
+    urls.push('http://student.mit.edu/catalog/m21Gd.html');
+    urls.push('http://student.mit.edu/catalog/m21Ge.html');
+    urls.push('http://student.mit.edu/catalog/m21Gf.html');
+    urls.push('http://student.mit.edu/catalog/m21Gg.html');
+    urls.push('http://student.mit.edu/catalog/m21Gh.html');
+    urls.push('http://student.mit.edu/catalog/m21Gq.html');
+    urls.push('http://student.mit.edu/catalog/m21Gr.html');
+    urls.push('http://student.mit.edu/catalog/m21Gs.html');
+    urls.push('http://student.mit.edu/catalog/m21Ha.html');
+    urls.push('http://student.mit.edu/catalog/m21Hb.html');
+    urls.push('http://student.mit.edu/catalog/m21La.html');                        
+    urls.push('http://student.mit.edu/catalog/m21Ma.html');     
+    urls.push('http://student.mit.edu/catalog/mWGSa.html');
+    urls.push('http://student.mit.edu/catalog/m22a.html');
+    urls.push('http://student.mit.edu/catalog/m24a.html');   
+    urls.push('http://student.mit.edu/catalog/mCCa.html');        
+    urls.push('http://student.mit.edu/catalog/mCSBa.html');
+    urls.push('http://student.mit.edu/catalog/mECa.html');
+    urls.push('http://student.mit.edu/catalog/mEMa.html');
+    urls.push('http://student.mit.edu/catalog/mESa.html'); 
+    urls.push('http://student.mit.edu/catalog/mHSTa.html');                           
+    urls.push('http://student.mit.edu/catalog/mIDSa.html');                             
+    urls.push('http://student.mit.edu/catalog/mMASa.html');
+    urls.push('http://student.mit.edu/catalog/mSCMa.html');
+    urls.push('http://student.mit.edu/catalog/mASa.html');                  
+    urls.push('http://student.mit.edu/catalog/mMSa.html');                     
+    urls.push('http://student.mit.edu/catalog/mNSa.html');
+    urls.push('http://student.mit.edu/catalog/mSTSa.html');
+    urls.push('http://student.mit.edu/catalog/mSWEa.html');
+    urls.push('http://student.mit.edu/catalog/mSPa.html');
+
+
+    //he lists the urls: there has got to be a better way to get all those htmls with scraping 
     return urls; 
 };
 
@@ -88,7 +171,7 @@ exercise.three = function(){
     console.log('--- QUESTION 03 ---');
 
     var files = [];
-    for (var i=0; i < 46 /*the number of websites*/; i++){
+    for (var i=0; i < urls.length; i++){
         files.push('./catalog/' + i + '.html'); //
     }
 
