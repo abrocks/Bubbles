@@ -43,9 +43,7 @@ exercise.one = function(){
         
     })
     */ 
-    urls.push('http://student.mit.edu/catalog/m1a.html');
-    urls.push('http://student.mit.edu/catalog/m1b.html');
-    urls.push('http://student.mit.edu/catalog/m1c.html');
+   urls.push('http://student.mit.edu/catalog/m1c.html');
     urls.push('http://student.mit.edu/catalog/m2a.html');
     urls.push('http://student.mit.edu/catalog/m2b.html');
     urls.push('http://student.mit.edu/catalog/m2c.html');
@@ -83,47 +81,94 @@ exercise.one = function(){
     urls.push('http://student.mit.edu/catalog/m15c.html');
     urls.push('http://student.mit.edu/catalog/m16a.html');
     urls.push('http://student.mit.edu/catalog/m16b.html');
-    urls.push('http://student.mit.edu/catalog/m17a.html');
-    urls.push('http://student.mit.edu/catalog/m17b.html');
     urls.push('http://student.mit.edu/catalog/m18a.html');
     urls.push('http://student.mit.edu/catalog/m18b.html');
     urls.push('http://student.mit.edu/catalog/m20a.html');
-    urls.push('http://student.mit.edu/catalog/m21a.html');
-    urls.push('http://student.mit.edu/catalog/m21Aa.html');
-    urls.push('http://student.mit.edu/catalog/mCMSa.html');
-    urls.push('http://student.mit.edu/catalog/m21Ga.html');
-    urls.push('http://student.mit.edu/catalog/m21Gb.html');
-    urls.push('http://student.mit.edu/catalog/m21Gc.html');
-    urls.push('http://student.mit.edu/catalog/m21Gd.html');
-    urls.push('http://student.mit.edu/catalog/m21Ge.html');
-    urls.push('http://student.mit.edu/catalog/m21Gf.html');
-    urls.push('http://student.mit.edu/catalog/m21Gg.html');
-    urls.push('http://student.mit.edu/catalog/m21Gh.html');
-    urls.push('http://student.mit.edu/catalog/m21Gq.html');
-    urls.push('http://student.mit.edu/catalog/m21Gr.html');
-    urls.push('http://student.mit.edu/catalog/m21Gs.html');
-    urls.push('http://student.mit.edu/catalog/m21Ha.html');
-    urls.push('http://student.mit.edu/catalog/m21Hb.html');
-    urls.push('http://student.mit.edu/catalog/m21La.html');                        
-    urls.push('http://student.mit.edu/catalog/m21Ma.html');     
-    urls.push('http://student.mit.edu/catalog/mWGSa.html');
     urls.push('http://student.mit.edu/catalog/m22a.html');
-    urls.push('http://student.mit.edu/catalog/m24a.html');   
-    urls.push('http://student.mit.edu/catalog/mCCa.html');        
-    urls.push('http://student.mit.edu/catalog/mCSBa.html');
-    urls.push('http://student.mit.edu/catalog/mECa.html');
-    urls.push('http://student.mit.edu/catalog/mEMa.html');
-    urls.push('http://student.mit.edu/catalog/mESa.html'); 
-    urls.push('http://student.mit.edu/catalog/mHSTa.html');                           
-    urls.push('http://student.mit.edu/catalog/mIDSa.html');                             
-    urls.push('http://student.mit.edu/catalog/mMASa.html');
-    urls.push('http://student.mit.edu/catalog/mSCMa.html');
-    urls.push('http://student.mit.edu/catalog/mASa.html');                  
-    urls.push('http://student.mit.edu/catalog/mMSa.html');                     
-    urls.push('http://student.mit.edu/catalog/mNSa.html');
-    urls.push('http://student.mit.edu/catalog/mSTSa.html');
-    urls.push('http://student.mit.edu/catalog/mSWEa.html');
-    urls.push('http://student.mit.edu/catalog/mSPa.html');
+    urls.push('http://student.mit.edu/catalog/m22b.html');
+    urls.push('http://student.mit.edu/catalog/m22c.html'); 
+
+//     urls.push('http://student.mit.edu/catalog/m1a.html');
+//     urls.push('http://student.mit.edu/catalog/m1b.html');
+//     urls.push('http://student.mit.edu/catalog/m1c.html');
+//     urls.push('http://student.mit.edu/catalog/m2a.html');
+//     urls.push('http://student.mit.edu/catalog/m2b.html');
+//     urls.push('http://student.mit.edu/catalog/m2c.html');
+//     urls.push('http://student.mit.edu/catalog/m3a.html');
+//     urls.push('http://student.mit.edu/catalog/m3b.html');
+//     urls.push('http://student.mit.edu/catalog/m4a.html');
+//     urls.push('http://student.mit.edu/catalog/m4b.html');
+//     urls.push('http://student.mit.edu/catalog/m4c.html');
+//     urls.push('http://student.mit.edu/catalog/m4d.html');
+//     urls.push('http://student.mit.edu/catalog/m4e.html');
+//     urls.push('http://student.mit.edu/catalog/m4f.html');
+//     urls.push('http://student.mit.edu/catalog/m4g.html');
+//     urls.push('http://student.mit.edu/catalog/m5a.html');
+//     urls.push('http://student.mit.edu/catalog/m5b.html');
+//     urls.push('http://student.mit.edu/catalog/m6a.html');
+//     urls.push('http://student.mit.edu/catalog/m6b.html');
+//     urls.push('http://student.mit.edu/catalog/m6c.html');
+//     urls.push('http://student.mit.edu/catalog/m7a.html');
+//     urls.push('http://student.mit.edu/catalog/m8a.html');
+//     urls.push('http://student.mit.edu/catalog/m8b.html');
+//     urls.push('http://student.mit.edu/catalog/m9a.html');
+//     urls.push('http://student.mit.edu/catalog/m9b.html');
+//     urls.push('http://student.mit.edu/catalog/m10a.html');
+//     urls.push('http://student.mit.edu/catalog/m10b.html');
+//     urls.push('http://student.mit.edu/catalog/m11a.html');
+//     urls.push('http://student.mit.edu/catalog/m11b.html');
+//     urls.push('http://student.mit.edu/catalog/m11c.html');
+//     urls.push('http://student.mit.edu/catalog/m12a.html');
+//     urls.push('http://student.mit.edu/catalog/m12b.html');
+//     urls.push('http://student.mit.edu/catalog/m12c.html');
+//     urls.push('http://student.mit.edu/catalog/m14a.html');
+//     urls.push('http://student.mit.edu/catalog/m14b.html');
+//     urls.push('http://student.mit.edu/catalog/m15a.html');
+//     urls.push('http://student.mit.edu/catalog/m15b.html');
+//     urls.push('http://student.mit.edu/catalog/m15c.html');
+//     urls.push('http://student.mit.edu/catalog/m16a.html');
+//     urls.push('http://student.mit.edu/catalog/m16b.html');
+//     urls.push('http://student.mit.edu/catalog/m17a.html');
+//     urls.push('http://student.mit.edu/catalog/m17b.html');
+//     urls.push('http://student.mit.edu/catalog/m18a.html');
+//     urls.push('http://student.mit.edu/catalog/m18b.html');
+//     urls.push('http://student.mit.edu/catalog/m20a.html');
+//     urls.push('http://student.mit.edu/catalog/m21a.html');
+//     urls.push('http://student.mit.edu/catalog/m21Aa.html');
+//     urls.push('http://student.mit.edu/catalog/mCMSa.html');
+//     urls.push('http://student.mit.edu/catalog/m21Ga.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gb.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gc.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gd.html');
+//     urls.push('http://student.mit.edu/catalog/m21Ge.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gf.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gg.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gh.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gq.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gr.html');
+//     urls.push('http://student.mit.edu/catalog/m21Gs.html');
+//     urls.push('http://student.mit.edu/catalog/m21Ha.html');
+//     urls.push('http://student.mit.edu/catalog/m21Hb.html');
+//     urls.push('http://student.mit.edu/catalog/m21La.html');                        
+//     urls.push('http://student.mit.edu/catalog/m21Ma.html');     
+//    // urls.push('http://student.mit.edu/catalog/mWGSa.html');
+//     urls.push('http://student.mit.edu/catalog/m22a.html');
+//     // urls.push('http://student.mit.edu/catalog/m24a.html');   
+//     // urls.push('http://student.mit.edu/catalog/mCCa.html');        
+//     // urls.push('http://student.mit.edu/catalog/mCSBa.html');
+//     // urls.push('http://student.mit.edu/catalog/mECa.html');
+//     // urls.push('http://student.mit.edu/catalog/mEMa.html');
+//     // urls.push('http://student.mit.edu/catalog/mESa.html'); 
+//     // urls.push('http://student.mit.edu/catalog/mHSTa.html');                           
+//     // urls.push('http://student.mit.edu/catalog/mIDSa.html');                             
+//     // urls.push('http://student.mit.edu/catalog/mMASa.html');
+//     // urls.push('http://student.mit.edu/catalog/mSCMa.html');
+//     // urls.push('http://student.mit.edu/catalog/mASa.html');                  
+//     // urls.push('http://student.mit.edu/catalog/mMSa.html');                     
+//     // urls.push('http://student.mit.edu/catalog/mNSa.html');
+//     // urls.push('http://student.mit.edu/catalog/mSTSa.html');
+//     // urls.push('http://student.mit.edu/catalog/mSWEa.html');
+//     // urls.push('http://student.mit.edu/catalog/mSPa.html');
 
 
     //he lists the urls: there has got to be a better way to get all those htmls with scraping 
@@ -152,7 +197,7 @@ exercise.two = function(){
         var res = request('GET', url);
         console.log(res);
         var filename = './catalog/' + index + '.html';
-        fs.writeFileSync(filename, res.getBody().toString()); 
+        fs.writeFileSync(filename, res.body.toString()); 
     });
 };
 
@@ -198,14 +243,20 @@ exercise.four = function(){
     // -----------------------------------------------
     console.log('---QUESTION 04---');
     //we are not creating this clean file 
-    var data = fs.readFileSync('./catalog/catalog.txt'); //cleaning up the content 
+    var data = fs.readFileSync('./catalog/catalog.txt');
+    console.log('---=reading completed ---');
+    //cleaning up the content 
     var scrubbed = minify(data.toString(),{
         collapseWhitespace: true,
         minifyJS: true,
         minifyCSS: true
     }); 
+
+    console.log('--- minify completed ---');
     var clean = scrubbed.replace(/'/g, ''); //if i have intermedate single quotes'' within text, things will break, so removing them 
-    fs.writeFileSync('.catalog/clean.txt', clean); //once done, write back out (its clean without those '')
+  
+    
+    fs.writeFileSync('catalog/clean.txt', clean); //once done, write back out (its clean without those '')
 };
 
 exercise.five = function(){
@@ -248,6 +299,8 @@ exercise.six = function(){
     $('h3').each(function(i, element){
         titles.push($(element).text());
     });
+    console.log(titles);
+
     return titles; 
 };
 
@@ -266,9 +319,10 @@ exercise.seven = function(){
     var titles = exercise.six(); //starting to clean up the titles
     //get word arrays from titles, filter out punctuation/numbers
     //use the map function
+    //here is where I want to take out the ugly stuff 
     var words = titles.map(function(title){
         return title.toLowerCase().match(/([a-z]+)/g);
-    });
+    }); 
     return words; 
 };
 
@@ -287,7 +341,15 @@ exercise.eight = function(){
     var wordsFlat = words.reduce (function(previous, current){
         return previous.concat(current);
     },[]);
-    return wordsFlat;
+    var junkWords = ['the', 'and', 'in', 'of', 'to', 'i', 'ii', 'an', 'j', 'with', 's','tht','as'];
+    //console.log(wordsFlat);
+    //var test = junkWords.includes('and');
+    //console.log(test);
+    
+    var result = wordsFlat.filter(word =>  !(junkWords.includes(word)));
+    console.log(result);
+    return result; 
+   // return wordsFlat;
 };
 
 exercise.nine = function(){
@@ -301,17 +363,20 @@ exercise.nine = function(){
     //  See homework guide document for more info.
     // -----------------------------------------------
     console.log('--ON PART 9 NOW AMEN--- ');
+    wordsFlat = exercise.eight();
     var scores = wordsFlat.reduce(function(previous, current){
         if(current in previous){
             previous[current] += 1;
         }
         else{
-            previous[curent] =1;
+            previous[current] =1;
         }
         return previous; 
     },{})
     console.log(scores);
+    fs.writeFileSync('catalog/finalResult.js', 'var scores = '+ JSON.stringify(scores));
     return scores;
+     
 };
 
 

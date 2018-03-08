@@ -28,6 +28,7 @@
         "cheerio": "^1.0.0-rc.2",
         "html-minifier": "^3.5.10",
         "mocha": "^3.2.0",
+        "node-minify": "^2.4.1",
         "sync-request": "^6.0.0"
     }
 }
